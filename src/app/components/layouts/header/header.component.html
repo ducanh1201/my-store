@@ -1,0 +1,14 @@
+<header class="bg-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                alt="Your Company">
+        </div>
+        <!-- Navigation -->
+        <nav class="flex-grow flex space-x-4 justify-center mr-7">
+            <a (click)="navigateToProductList()" class="text-gray-800 hover:text-gray-600 font-medium flex items-center">Product List</a>
+            <a (click)="navigateToCart()" class="text-gray-800 hover:text-gray-600 font-medium flex items-center">Cart</a>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Book",
+      "price": 9.99,
+      "url": "https://pagedone.io/asset/uploads/1701157806.png",
+      "description": "You can read it!"
+    },
+    {
+      "id": 2,
+      "name": "Headphones",
+      "price": 249.99,
+      "url": "https://pagedone.io/asset/uploads/1701157826.png",
+      "description": "Listen to stuff!"
+    },
+    {
+      "id": 3,
+      "name": "Backpack",
+      "price": 79.99,
+      "url": "https://pagedone.io/asset/uploads/1701157844.png",
+      "description": "Carry things around town!"
+    },
+    {
+      "id": 4,
+      "name": "Glasses",
+      "price": 129.99,
+      "url": "https://pagedone.io/asset/uploads/1700726158.png",
+      "description": "Now you can see!"
+    },
+    {
+      "id": 5,
+      "name": "Cup",
+      "price": 4.99,
+      "url": "https://pagedone.io/asset/uploads/1700726174.png",
+      "description": "Drink anything with it!"
+    },
+    {
+      "id": 6,
+      "name": "Shirt",
+      "price": 29.99,
+      "url": "https://pagedone.io/asset/uploads/1700726207.png",
+      "description": "Wear it with style!"
+    }
+  ]
