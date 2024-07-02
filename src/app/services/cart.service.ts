@@ -28,18 +28,20 @@ export class CartService {
         this.toastr.success(`${item.quantity} ${item.name}`, `Removed Successfully`);
     }
 
-    public addToCart(product: CartProduct) {
-        const existingProduct = this.cartProducts.find(p => p.id === product.id);
-        if (existingProduct) {
-            existingProduct.quantity = product.quantity;
+    public addToCart(item: CartProduct) {
+        const currentCartProducts = this.cartProductsSubject.value;
+        const existingItem = currentCartProducts.find(p => p.id == item.id);
+    
+        if(existingItem) {
+          existingItem.quantity = item.quantity;
         } else {
-            this.cartProducts.push(product);
-
+          currentCartProducts.push(item)
         }
-        this.cartProductsSubject.next(this.cartProducts);
-        localStorage.setItem('cartProducts', JSON.stringify(this.cartProducts));
-        this.showAddSuccess(product);
-    }
+    
+        this.cartProductsSubject.next(currentCartProducts);
+        this.saveCart(currentCartProducts);
+        this.showAddSuccess(item);
+      }
 
 
     private loadInitialData() {
